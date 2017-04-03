@@ -1,0 +1,22 @@
+
+.plus_icon{
+    display: block; 
+    margin: 0 auto;
+    text-align: center;
+    line-height: 40px;
+    font-size: 35px;
+}
+.plus_icon ion-icon[favorite] {
+    color: #244c82;
+}
+.plus_icon ion-icon[item-right]{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.sortrow{
+  border-bottom: 2px solid #2d3d57; 
+  margin: 5px 0; 
+  text-align: left; 
+  color: #000;
+}

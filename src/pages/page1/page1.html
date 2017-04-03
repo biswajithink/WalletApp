@@ -1,0 +1,262 @@
+<ion-header>
+  
+  <ion-navbar > <!-- If you don't need back here -->
+    <button ion-button menuToggle start>
+      <ion-icon name="menu"></ion-icon>
+      </button>
+    
+    <ion-buttons end>
+      <span class="righttext-white"> > P 2500 </span>
+      <button ion-button (click)="presentPopover($event)">
+        <ion-icon name="md-more"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar> 
+  
+</ion-header>
+
+<ion-content>
+  <section class="banner">
+    <div class="bannerdiv">
+      <ion-grid class="no-padding">
+        <ion-row>
+          <ion-col width-30><img src="assets/images/man.png" alt="man"></ion-col>
+          <ion-col width-70>
+            <p class="bannerdiv-text-white">25th June, 2016</p>
+            <p class="bannerdiv-text-blue">P 2,500</p>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+  </section>
+
+    <ion-segment class="menubackground-home" [(ngModel)]="tabs">
+        <ion-segment-button value="favoutites" class="custom-segment-button">
+          FAVOURITES
+        </ion-segment-button>
+        <ion-segment-button value="recent" class="custom-segment-button">
+          RECENT
+        </ion-segment-button>
+        <ion-segment-button value="payments" class="custom-segment-button">
+          PAYMENTS
+        </ion-segment-button>
+      </ion-segment>
+
+  <div [ngSwitch]="tabs">
+  <ion-card class="customcard-background" *ngSwitchCase="'favoutites'">
+  <ion-card-content class="no-padding">
+  <ion-grid>
+      <ion-row class="sortrow">
+        <ion-col width-100>A</ion-col>
+      </ion-row>
+
+      <ion-row class="wrapper-transfercontact aligner">
+        <ion-col><img class="image" src="assets/images/b4.jpg" alt="person"></ion-col>
+        <ion-col class="bluetext aligner-item no-padding text-left">Person 1</ion-col>
+      </ion-row>
+
+      <ion-row class="wrapper-transfercontact aligner">
+        <ion-col><img class="image" src="assets/images/b3.jpg" alt="person"></ion-col>
+        <ion-col class="bluetext aligner-item no-padding text-left">Person 2</ion-col>
+      </ion-row>
+
+      <ion-row class="wrapper-transfercontact aligner">
+        <ion-col><img class="image" src="assets/images/b2.jpg" alt="person"></ion-col>
+        <ion-col class="bluetext aligner-item no-padding text-left">Person 3</ion-col>
+      </ion-row>
+  </ion-grid>
+</ion-card-content>
+</ion-card>
+
+
+<div *ngSwitchCase="'recent'">
+    <ion-card class="customcard-background">
+
+    <ion-card-header class="no-padding custom-card-header">
+      <ion-grid>
+        <ion-row>
+          <ion-col class="alignleft">25th June, 2016</ion-col>
+          <ion-col class="alignright">Pending</ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-header>
+
+    <ion-card-content class="no-padding">
+      <ion-grid class=nopaddingbottom>
+        <ion-row>
+          <ion-col width-30>
+            <img class="image" src="assets/images/woman.png" alt="man">
+            <p class="usertext">User</p>
+          </ion-col>
+          <ion-col width-40 class="bluetext"> < 1500</ion-col>
+          <ion-col width-30>
+            <img class="image" src="assets/images/man.png" alt="man">
+            <p class="usertext">User</p>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+
+    <ion-grid class="nopaddingbottom nopaddingtop">
+      <ion-row>
+        <ion-col class="nopaddingtop"><button (click)="goToProfile()" class="custom-button" ion-button>View</button></ion-col>
+        <ion-col class="nopaddingtop"><button (click)="goToHistory()" class="custom-button" ion-button>History</button></ion-col>
+      </ion-row>
+    </ion-grid>
+
+  </ion-card>
+
+    <ion-card class="customcard-background">
+
+    <ion-card-header class="no-padding custom-card-header">
+      <ion-grid>
+        <ion-row>
+          <ion-col class="alignleft">25th June, 2016</ion-col>
+          <ion-col class="alignright">Pending</ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-header>
+
+    <ion-card-content class="no-padding">
+      <ion-grid class=nopaddingbottom>
+        <ion-row>
+          <ion-col width-30>
+            <img class="image" src="assets/images/woman.png" alt="man">
+            <p class="usertext">User</p>
+          </ion-col>
+          <ion-col width-40 class="bluetext"> < 1500</ion-col>
+          <ion-col width-30>
+            <img class="image" src="assets/images/man.png" alt="man">
+            <p class="usertext">User</p>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+
+    <ion-grid class="nopaddingbottom nopaddingtop">
+      <ion-row>
+        <ion-col class="nopaddingtop"><button (click)="goToProfile()" class="custom-button" ion-button>View</button></ion-col>
+        <ion-col class="nopaddingtop"><button (click)="goToHistory()" class="custom-button" ion-button>History</button></ion-col>
+      </ion-row>
+    </ion-grid>
+
+  </ion-card>
+
+    <ion-card class="customcard-background">
+
+    <ion-card-header class="no-padding custom-card-header">
+      <ion-grid>
+        <ion-row>
+          <ion-col class="alignleft">25th June, 2016</ion-col>
+          <ion-col class="alignright">Pending</ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-header>
+
+    <ion-card-content class="no-padding">
+      <ion-grid class=nopaddingbottom>
+        <ion-row>
+          <ion-col width-30>
+            <img class="image" src="assets/images/woman.png" alt="man">
+            <p class="usertext">User</p>
+          </ion-col>
+          <ion-col width-40 class="bluetext"> < 1500</ion-col>
+          <ion-col width-30>
+            <img class="image" src="assets/images/man.png" alt="man">
+            <p class="usertext">User</p>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+
+    <ion-grid class="nopaddingbottom nopaddingtop">
+      <ion-row>
+        <ion-col class="nopaddingtop"><button (click)="goToProfile()" class="custom-button" ion-button>View</button></ion-col>
+        <ion-col class="nopaddingtop"><button (click)="goToHistoryp()" class="custom-button" ion-button>History</button></ion-col>
+      </ion-row>
+    </ion-grid>
+
+  </ion-card>
+</div>
+
+  <div *ngSwitchCase="'payments'">
+    <ion-card class="customcard-background">
+
+    <ion-card-header class="no-padding custom-card-header">
+      <ion-grid>
+        <ion-row>
+          <ion-col class="alignleft">25th June, 2016</ion-col>
+          <ion-col class="alignright">0003457</ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-header>
+
+    <ion-card-content class="no-padding">
+      <ion-grid class=nopaddingbottom>
+        <ion-row>
+          <ion-col width-30>
+            <img class="image" src="assets/images/woman.png" alt="man">
+            <p class="usertext">User</p>
+          </ion-col>
+          <ion-col width-40 class="bluetext"> </ion-col>
+          <ion-col width-40 class="aligner">
+            <span class="aligner-item" text-right>
+              <p class="bannerdiv-text-blue-payments">P 1,500</p>
+              <p class="subtext-payments">before 14 Days</p>
+            </span>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+
+    <ion-grid class="nopaddingbottom nopaddingtop">
+      <ion-row>
+        <ion-col class="nopaddingtop"><button (click)="goToHistoryp()" class="custom-button" ion-button>History</button></ion-col>
+        <ion-col class="nopaddingtop"><button (click)="goToMakaePayment()" class="custom-button" ion-button>Pay Now</button></ion-col>
+      </ion-row>
+    </ion-grid>
+
+  </ion-card>
+
+  <ion-card class="customcard-background">
+
+    <ion-card-header class="no-padding custom-card-header">
+      <ion-grid>
+        <ion-row>
+          <ion-col class="alignleft">25th June, 2016</ion-col>
+          <ion-col class="alignright">0003457</ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-header>
+
+    <ion-card-content class="no-padding">
+      <ion-grid class=nopaddingbottom>
+        <ion-row>
+          <ion-col width-30>
+            <img class="image" src="assets/images/woman.png" alt="man">
+            <p class="usertext">User</p>
+          </ion-col>
+          <ion-col width-40 class="bluetext"> </ion-col>
+          <ion-col width-40 class="aligner">
+            <span class="aligner-item" text-right>
+              <p class="bannerdiv-text-blue-payments">P 2,500</p>
+              <p class="subtext-payments">before 14 Days</p>
+            </span>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+
+    <ion-grid class="nopaddingbottom nopaddingtop">
+      <ion-row>
+        <ion-col class="nopaddingtop"><button (click)="goToHistoryp()" class="custom-button" ion-button>History</button></ion-col>
+        <ion-col class="nopaddingtop"><button (click)="goToMakaePayment()" class="custom-button" ion-button>Pay Now</button></ion-col>
+      </ion-row>
+    </ion-grid>
+
+  </ion-card>
+  </div>
+
+  </div>
+
+</ion-content>

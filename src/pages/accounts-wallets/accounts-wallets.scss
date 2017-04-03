@@ -1,0 +1,73 @@
+.wallet-text-row1{
+    color: #2d3d57;
+    font-size: 22px;
+    text-align: left; 
+    padding: 2px 0px;
+}
+
+.default-wallet-text{
+    color: #2d3d57;
+    font-size: 18px;
+    text-align: left; 
+    padding: 2px 0px;
+    line-height:2px;
+}
+
+.wallet-text-row2{
+    color: #2d3d57;
+    font-size: 35px;
+    text-align: right; 
+    padding: 2px 0px;
+}
+ .acw-rec-image{
+  margin-left:84px
+   
+}
+
+ 
+.exp_date-row3{
+    
+    font-size: 16px;
+    margin:0;
+    text-align: right;
+    line-height:12px;
+    font-size: 16px;
+}
+.acc_wall:nth-child(1) .ac-round-image{
+    background: #ff0000;
+    background: url('../../assets/images/history-1.png') no-repeat center top;
+    background-size: 100%;
+}
+
+.acc_wall:nth-child(2) .ac-round-image:nth-child(1){
+    
+    background: url('../../assets/images/edit.png') no-repeat center top;
+    background-size: 100%;
+}
+
+.bannerdiv-text-blue-accounts{color: $lightblue !important; margin: 0 !important; font-family:'Lato Semibold'; font-size: 2.8rem !important;}
+
+.subtext-accounts{font-family:'Lato Semibold'; font-size: 1.5rem !important; color: $darkgrey !important; margin: 0 !important;}
+
+.custom-margintop-accounts{margin-top: 20px;}
+
+.bannerdiv-text-blue-accounts-right{@extend .bannerdiv-text-blue-accounts; text-align: right;}
+.subtext-accounts-right{@extend .subtext-accounts; text-align: right;}
+
+.add_btn{
+    float: right;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background: #08336a;
+    color: #fff;
+}
+.add_btn ion-icon{
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 26px;
+}
+.add_btn ion-icon:before{
+    font-weight: bold;
+}
+

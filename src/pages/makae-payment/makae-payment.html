@@ -1,0 +1,120 @@
+<!--
+  Generated template for the MakaePayment page. 
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+    <ion-navbar topcolor_bg> <!-- If you don't need back here -->
+    <button ion-button menuToggle start>
+      <ion-icon name="menu"></ion-icon>
+      </button>
+        <ion-title>Make Payments</ion-title>
+        <ion-buttons end>
+            <span class="righttext-white"> > P 2500 </span>
+            <button ion-button (click)="presentPopover($event)">
+                <ion-icon name="md-more"></ion-icon>
+            </button>
+        </ion-buttons>
+    </ion-navbar>
+</ion-header>
+
+
+
+<ion-content>
+
+  <ion-card class="customcard-background">
+
+    <ion-card-header class="no-padding custom-card-header">
+      <ion-grid>
+        <ion-row>
+          <ion-col class="alignleft">25th June, 2016</ion-col>
+          <ion-col class="alignright">Pending</ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-header>
+
+    <ion-card-content class="no-padding">
+      <ion-grid class=nopaddingbottom>
+        <ion-row>
+          <ion-col width-30>
+            <img class="image" src="assets/images/woman.png" alt="man">
+            <p class="usertext">User</p>
+          </ion-col>
+          <ion-col width-40 class="bluetext">1500 > </ion-col>
+          <ion-col width-40>
+            <img class="image" src="assets/images/man.png" alt="man">
+            <p class="usertext">User</p>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+
+</ion-card>
+
+<ion-card class="customcard-background">
+
+    <ion-card-header class="no-padding custom-card-header">
+      <ion-grid>
+        <ion-row>
+          <ion-col class="alignleft">Details</ion-col>
+          <ion-col class="alignright"></ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-header>
+
+    <ion-card-content class="no-padding">
+      <ion-grid class=nopaddingbottom>
+        <ion-row>
+          <ion-col class="coltext-makepayment">Current</ion-col>
+          <ion-col></ion-col>
+          <ion-col text-right class="coltext-makepayment">2500</ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col class="coltext-makepayment">Amount</ion-col>
+          <ion-col></ion-col>
+          <ion-col text-right class="coltext-makepayment">-1500</ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col><img src="assets/images/line.png" alt="line"></ion-col>
+          <ion-col></ion-col>
+          <ion-col><img src="assets/images/line.png" alt="line"></ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col class="coltext-makepayment-blue">Balance</ion-col>
+          <ion-col></ion-col>
+          <ion-col text-right class="coltext-makepayment-blue">1000</ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+</ion-card>
+    
+<ion-card>
+    <ion-list class="cate_dorpdown">
+        <ion-item>
+            <ion-label>Category</ion-label>
+            <ion-select [(ngModel)]="gaming">
+                <ion-option value="cateOne">Category 1</ion-option>
+                <ion-option value="cateTwo">Category 2</ion-option>
+                <ion-option value="cateThree">Category 3</ion-option>
+                <ion-option value="cateFour">Category 4</ion-option>
+                <ion-option value="cateFive">Category 5</ion-option>
+                <ion-option value="cateSix">Category 6</ion-option>
+            </ion-select>
+        </ion-item>
+    </ion-list>
+</ion-card>
+
+
+  <!--<div class="slidewrap">
+    <p class="drag">Drag To Pay</p>
+    <div class="leftcircle"></div>
+    <input class="customrange" type="range" id="price"  [(ngModel)]="currentRange" (touchend)="test()" [disabled]="currentRange==100">
+     <div class="rightcircle"></div>
+  </div>-->
+
+
+</ion-content>

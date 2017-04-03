@@ -1,0 +1,76 @@
+.login_content{
+    background: #07336a url("../../assets/images/background-blue.png") repeat-y center top;
+    .login_img{
+        width: 80px;
+        margin: 10% auto;
+        display: block;
+    }
+    form{
+        margin-top: 20px;         
+        .item{
+            background: none;
+            border: none !important;
+            padding-right: 16px; 
+            border-bottom: 1px solid #c8c8c8 !important; 
+            .item-inner{
+                border-bottom: 0px !important; 
+                color: #fff;
+                font-size: 18px;  
+                font-weight: lighter;           
+            }
+        }
+        .item:first-child{
+            margin-bottom: 15px;
+        }
+        .item > ion-icon{
+            color: $white;
+            margin: 0px 10px 0px 0px;
+            padding-right: 6px;  
+            border-right: 2px solid $white;
+            min-height: auto;
+            line-height: 24px;
+            font-size: 24px;
+        }
+    }
+    .login_div{
+        padding: 16px;
+        button{
+            background: #2196f3;
+            color: #fff;
+            border-radius:4px;
+            line-height: 30px;
+            font-size: 16px;
+            padding: 8px 0;
+            display: inline-block;
+            text-align: center;
+            width: 48%;
+            margin: 10px 2px;
+            height: auto;
+            text-transform: capitalize;
+        }      
+    }
+}
+span.error{
+    display: block;
+    color: #ff4040;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0px 16px;
+    line-height: 30px;
+}
+::-webkit-input-placeholder {
+color: $white !important;
+}
+*:-moz-placeholder {
+color: $white !important;
+}
+*:-ms-input-placeholder { // IE10+ */
+color: $white !important;
+}
+
+input::-webkit-input-placeholder {
+color: $white;
+}
+input:focus::-webkit-input-placeholder {
+color: $white;
+}

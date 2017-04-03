@@ -1,0 +1,189 @@
+<!--
+  Generated template for the Reports page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+    <ion-navbar topcolor_bg>
+        <button ion-button menuToggle start>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>Reports</ion-title>
+        <ion-buttons end>
+            <span class="righttext-white"> > P 2500 </span>
+            <button ion-button (click)="presentPopover($event)">
+                <ion-icon name="md-more"></ion-icon>
+            </button>
+        </ion-buttons>
+    </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+ <div class="line_chartDiv">
+    <canvas baseChart class="chart" 
+                [colors]="chartColors"
+                [data]="lineChartData"
+                [labels]="lineChartLabels"
+                [options]="lineChartOptions"
+                [chartType]="lineChartType"></canvas>
+  </div>
+  <div class="doughnut_chartDiv">
+  <canvas baseChart  class="chart chart-doughnut"
+                [data]="doughnutChartData"
+                [labels]="doughnutChartLabels"
+                [chartType]="doughnutChartType"
+                [colors]="doughnutChartColors">
+                
+  </canvas>
+  <span class="chart_cover chart_coverOne">{{doughnutChartData[3]}}<p>{{doughnutChartLabels[3]}}</p></span>
+  <span class="chart_cover chart_coverTwo">{{doughnutChartData[0]}}<p>{{doughnutChartLabels[0]}}</p></span>
+  <span class="chart_cover chart_coverThree">{{doughnutChartData[2]}}<p>{{doughnutChartLabels[2]}}</p></span>
+  <span class="chart_cover chart_coverFour">{{doughnutChartData[1]}}<p>{{doughnutChartLabels[1]}}</p></span>
+  <span class="chart_cover chart_coverTotal">{{doughnutChartData[0] + doughnutChartData[1] + doughnutChartData[2] + doughnutChartData[3]}}<p>Total</p></span>
+</div>
+
+
+<!--
+  <section class="banner">
+    <div class="bannerdiv">
+      <ion-grid class="no-padding">
+        <ion-row>
+          <ion-col>
+            <p class="bannerdiv-text-white-reports">Graph - Days in month against cash <span>(in and out)</span></p>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+  </section>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col><img style="display: block; margin: 0 auto; margin-top: 10px; width: 80%;" src="assets/images/img/chart.jpg" alt="chart"></ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col class="aligner">
+        <span class="aligner-item" text-left>
+          <p class="subtext-accounts">John T Doe</p>
+          <p class="bannerdiv-text-blue-accounts">P 2,500</p>
+        </span>
+      </ion-col>
+      <ion-col></ion-col>
+      <ion-col class="aligner">
+        <span class="aligner-item" text-right>
+          <p class="subtext-accounts">John T Doe</p>
+          <p class="bannerdiv-text-blue-accounts">P 2,500</p>
+        </span>
+      </ion-col>
+    </ion-row>         
+  </ion-grid>
+
+  -->
+    <ion-card class="customcard-background">
+
+    <ion-card-header class="no-padding custom-card-header">
+      <ion-grid>
+        <ion-row>
+          <ion-col class="aligncenter">Category</ion-col>
+          <ion-col class="aligncenter">This Month</ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-header>
+
+    <ion-card-content class="no-padding custom-card-header">
+      
+      <ion-grid>
+      
+      <ion-row>
+        <ion-col>
+          <ion-list>
+          <ion-item class="custom-item-reportscontinued">
+            <ion-row class="aligner">
+              <ion-col class="no-padding"><img class="image" src="assets/images/food.png" alt="food"></ion-col>
+              <ion-col class="no-padding aligner-item reportscont-text">Food</ion-col>
+            </ion-row>
+          </ion-item>
+      </ion-list>
+        </ion-col>
+
+        <ion-col class="aligner">
+          <ion-list class="aligner-item">
+          <ion-item class="custom-item-reportscontinued"><ion-icon class="customgreen" name="md-arrow-dropup" item-left></ion-icon>400</ion-item>
+      </ion-list>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <ion-list>
+          <ion-item class="custom-item-reportscontinued">
+            <ion-row class="aligner">
+              <ion-col class="no-padding"><img class="image" src="assets/images/house.png" alt="house"></ion-col>
+              <ion-col class="no-padding aligner-item reportscont-text">Housing</ion-col>
+            </ion-row>
+          </ion-item>
+      </ion-list>
+        </ion-col>
+
+        <ion-col class="aligner">
+          <ion-list class="aligner-item">
+          <ion-item class="custom-item-reportscontinued"><ion-icon class="customgreen" name="md-arrow-dropup" item-left></ion-icon>2500</ion-item>
+      </ion-list>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <ion-list>
+          <ion-item class="custom-item-reportscontinued">
+            <ion-row class="aligner">
+              <ion-col class="no-padding"><img class="image" src="assets/images/electricity.png" alt="electricity"></ion-col>
+              <ion-col class="no-padding aligner-item reportscont-text">Electricity</ion-col>
+            </ion-row>
+          </ion-item>
+      </ion-list>
+        </ion-col>
+
+        <ion-col class="aligner">
+          <ion-list class="aligner-item">
+          <ion-item class="custom-item-reportscontinued"><ion-icon class="customred" name="md-arrow-dropdown" item-left></ion-icon>200</ion-item>
+      </ion-list>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <ion-list>
+          <ion-item class="custom-item-reportscontinued">
+            <ion-row class="aligner">
+              <ion-col class="no-padding"><img class="image" src="assets/images/drop.png" alt="water"></ion-col>
+              <ion-col class="no-padding aligner-item reportscont-text">Water</ion-col>
+            </ion-row>
+          </ion-item>
+      </ion-list>
+        </ion-col>
+
+        <ion-col class="aligner">
+          <ion-list class="aligner-item">
+          <ion-item class="custom-item-reportscontinued"><ion-icon class="customred" name="md-arrow-dropdown" item-left></ion-icon>300</ion-item>
+      </ion-list>
+        </ion-col>
+      </ion-row>
+        <ion-row>
+            <ion-col>
+                <button class="custom-button" ion-button>Email</button>
+            </ion-col>
+        </ion-row>
+
+    </ion-grid>
+        
+
+    </ion-card-content>
+
+  </ion-card>
+
+</ion-content>

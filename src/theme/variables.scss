@@ -1,0 +1,141 @@
+// Ionic Variables and Theming. For more info, please see:
+// http://ionicframework.com/docs/v2/theming/
+$font-path: "../assets/fonts";
+
+@import "ionic.globals";
+
+
+// Shared Variables
+// --------------------------------------------------
+// To customize the look and feel of this app, you can override
+// the Sass variables found in Ionic's source scss files.
+// To view all the possible Ionic variables, see:
+// http://ionicframework.com/docs/v2/theming/overriding-ionic-variables/
+
+
+
+
+// Named Color Variables
+// --------------------------------------------------
+// Named colors makes it easy to reuse colors on various components.
+// It's highly recommended to change the default colors
+// to match your app's branding. Ionic uses a Sass map of
+// colors so you can add, rename and remove colors as needed.
+// The "primary" color is the only required color in the map.
+
+$colors: (
+  primary:    #2d3d57,
+  secondary:  #32db64,
+  danger:     #f53d3d,
+  light:      #f4f4f4,
+  dark:       #2d3d57,
+  favorite:   #69BB7B
+);
+
+
+$orange: #fd6421;
+$darkblue: #07336a;
+$lightblue: #2196f3;
+$white: #fff;
+$green: #8ac149;
+$darkgrey: #686868;
+$lightgrey: #efefef;
+$pink: #e81c61;
+$lightergrey: #d7d7d7;
+$skyblue: #1f94f3;
+
+$text-right:"text-align: right !important";
+
+$text-left:"text-align: left !important";
+
+// App iOS Variables
+// --------------------------------------------------
+// iOS only Sass variables can go here
+
+
+
+
+// App Material Design Variables
+// --------------------------------------------------
+// Material Design only Sass variables can go here
+
+
+
+
+// App Windows Variables
+// --------------------------------------------------
+// Windows only Sass variables can go here
+
+
+
+
+// App Theme
+// --------------------------------------------------
+// Ionic apps can have different themes applied, which can
+// then be future customized. This import comes last
+// so that the above variables are used and Ionic's
+// default are overridden.
+
+@import "ionic.theme.default";
+
+
+// Ionicons
+// --------------------------------------------------
+// The premium icon font for Ionic. For more info, please see:
+// http://ionicframework.com/docs/v2/ionicons/
+
+@import "ionic.ionicons";
+
+
+// Fonts
+// --------------------------------------------------
+
+@import "roboto";
+@import "noto-sans";
+
+
+@import "../pages/page1/page1";
+
+@import "../pages/page2/page2";
+
+@import "../pages/profile/profile";
+
+@import "../pages/history/history";
+
+@import "../pages/accountscard/accountscard";
+
+@import "../pages/accounts-wallets/accounts-wallets";
+
+@import "../pages/payments/payments";
+
+@import "../pages/makae-payment/makae-payment";
+
+@import "../pages/merchants/merchants";
+
+@import "../pages/airtime/airtime";
+
+@import "../pages/transfer/transfer";
+
+@import "../pages/transfer-self/transfer-self";
+
+@import "../pages/cash-cashout/cash-cashout";
+
+@import "../pages/cash-cashcancel/cash-cashcancel";
+
+@import "../pages/settings/settings";
+
+@import "../pages/reports/reports";
+
+@import "../pages/transfer-contribute/transfer-contribute";
+
+@import "../pages/reports-continued/reports-continued";
+
+@import "../pages/settingshelp/settingshelp";
+
+@import "../pages/transfer-accepted/transfer-accepted";
+
+@import "../pages/tutorials/tutorials";
+
+@import "../pages/calculator/calculator";
+
+@import "../pages/popover/popover";

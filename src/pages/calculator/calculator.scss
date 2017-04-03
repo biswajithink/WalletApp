@@ -1,0 +1,14 @@
+.bluetext-calculator{text-align: center;
+    color: #2196f3;
+    font-size: 8rem;
+    font-family: 'Lato Semibold';
+   }
+
+.calc-res{background: $darkblue; width: 100%; padding:0;}
+.calc-res p{font-family: 'Lato Semibold'; color: $white; text-align: right; font-size: 10rem; margin: 0;}
+.calc-res p span{font-size: 2rem; text-transform: uppercase; padding-left: 5px;}
+.titleblue-calc{text-align: center; padding: 5px 0; width: 100%; color: $white; font-family: 'Lato Semibold'; background: $lightblue;}
+
+.digits-calc, .digits-calc button{text-align: center; font-size: 2.5rem;}
+
+ion-icon{line-height: 2;}

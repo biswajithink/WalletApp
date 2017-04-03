@@ -1,0 +1,23 @@
+.image1 {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 50%;
+ }
+ .wrapper-settings{width: 60%; margin: 0 auto;}
+ .pad-bottom-settings{padding-bottom: 8px; padding-right: 5px;}
+ .bluetext-settingshelp {
+    text-align: left;
+    color: #2196f3;
+    font-size: 2.2rem;
+    font-family: 'Lato Semibold';}
+
+  .tutorials-image{padding-left: 20px;}
+  .border-both{border-top: 2px solid #d7d7d7; border-bottom: 2px solid #d7d7d7; padding: 5px 0 0 0;}
+
+  .custom-listitem-help{font-family:'Lato Semibold'; font-size: 1.8rem; color: $darkgrey; text-align: left; border: none !important; background: none;}
+
+  ion-icon[item-left] + .item-inner, ion-icon[item-left] + .item-input{margin-left: 0px;}
+
+  .custom-iconcolor-help{color: $darkblue;}
+  .no-padding-bottom{padding-bottom: 0;}

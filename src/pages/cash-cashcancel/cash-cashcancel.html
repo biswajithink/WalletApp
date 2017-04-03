@@ -1,0 +1,135 @@
+<!--
+  Generated template for the Cash page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+    <ion-navbar topcolor_bg>
+        <button ion-button menuToggle start>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>Cash</ion-title>
+        <ion-buttons end>
+            <span class="righttext-white"> > P 2500 </span>
+            <button ion-button (click)="presentPopover($event)">
+                <ion-icon name="md-more"></ion-icon>
+            </button>
+        </ion-buttons>
+    </ion-navbar>
+</ion-header>
+
+
+<ion-content class="cash-cashcancel">
+
+  <ion-row class="sub-row transfer_sub">
+        <a class="button" tab-state (click)="goToCashout()">Cash Out</a>
+        <a class="button" tab-state (click)="goToCashcancel()">Cash Cancel</a>        
+    </ion-row>
+
+  <ion-card class="customcard-background">
+
+    <ion-card-header class="no-padding custom-card-header">
+      <ion-grid>
+        <ion-row>
+          <ion-col class="alignleft">25th June, 2016</ion-col>
+          <ion-col class="alignright">Pending</ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-header>
+
+    <ion-card-content class="no-padding">
+      <ion-grid class=nopaddingbottom>
+        <ion-row>
+          <ion-col width-30>
+            <img class="image" src="assets/images/woman.png" alt="man">
+            <p class="usertext">User</p>
+          </ion-col>
+          <ion-col width-40 class="bluetext"> < 1500</ion-col>
+          <ion-col width-40>
+            <img class="image" src="assets/images/man.png" alt="man">
+            <p class="usertext">User</p>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+
+    <ion-grid class="nopaddingbottom nopaddingtop">
+      <ion-row>
+        <ion-col class="nopaddingtop"><button class="custom-button" ion-button>Cancel</button></ion-col>
+      </ion-row>
+    </ion-grid>
+
+  </ion-card>
+
+    <ion-card class="customcard-background">
+
+    <ion-card-header class="no-padding custom-card-header">
+      <ion-grid>
+        <ion-row>
+          <ion-col class="alignleft">25th June, 2016</ion-col>
+          <ion-col class="alignright">Pending</ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-header>
+
+    <ion-card-content class="no-padding">
+      <ion-grid class=nopaddingbottom>
+        <ion-row>
+          <ion-col width-30>
+            <img class="image" src="assets/images/woman.png" alt="man">
+            <p class="usertext">User</p>
+          </ion-col>
+          <ion-col width-40 class="bluetext"> < 1500</ion-col>
+          <ion-col width-40>
+            <img class="image" src="assets/images/man.png" alt="man">
+            <p class="usertext">User</p>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+
+    <ion-grid class="nopaddingbottom nopaddingtop">
+      <ion-row>
+        <ion-col class="nopaddingtop"><button class="custom-button" ion-button>Cancel</button></ion-col>
+      </ion-row>
+    </ion-grid>
+
+  </ion-card>
+
+    <ion-card class="customcard-background">
+
+    <ion-card-header class="no-padding custom-card-header">
+      <ion-grid>
+        <ion-row>
+          <ion-col class="alignleft">25th June, 2016</ion-col>
+          <ion-col class="alignright">Pending</ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-header>
+
+    <ion-card-content class="no-padding">
+      <ion-grid class=nopaddingbottom>
+        <ion-row>
+          <ion-col width-30>
+            <img class="image" src="assets/images/woman.png" alt="man">
+            <p class="usertext">User</p>
+          </ion-col>
+          <ion-col width-40 class="bluetext"> < 1500</ion-col>
+          <ion-col width-40>
+            <img class="image" src="assets/images/man.png" alt="man">
+            <p class="usertext">User</p>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+
+    <ion-grid class="nopaddingbottom nopaddingtop">
+      <ion-row>
+        <ion-col class="nopaddingtop"><button class="custom-button" ion-button>Cancel</button></ion-col>
+      </ion-row>
+    </ion-grid>
+
+  </ion-card>
+
+</ion-content>

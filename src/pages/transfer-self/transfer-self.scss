@@ -1,0 +1,25 @@
+.transfertext-self{color: #2d3d57; font-size: 42px; text-align: left;}
+.transfertext1-self{padding:10px 0 0 0; margin:0px; font-size: 25px;} 
+.transfer-next{margin: 15px auto; font-family:'Lato Semibold'; text-align: right; font-size: 3rem; color: #2d3d57; width: 92%; color: $lightblue;}
+
+.aligner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.aligner-item {
+  max-width: 100%;
+}
+
+.aligner-item--top {
+  align-self: flex-start;
+}
+
+.aligner-item--bottom {
+  align-self: flex-end;
+}
+.sortrow{
+    font-weight: bold;
+    font-size: 1.9rem;
+}

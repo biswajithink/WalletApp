@@ -1,0 +1,98 @@
+// http://ionicframework.com/docs/v2/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+
+.slide-to-click-slider-container {
+  position: relative;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px 20px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.slide-to-click-slider {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  bottom: 2px;
+  padding: 8px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  background: #e8e8e8; /* Old browsers */
+  background: -moz-linear-gradient(top, #e8e8e8 0%, #c4c4c4 52%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e8e8e8), color-stop(52%, #c4c4c4)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #e8e8e8 0%, #c4c4c4 52%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #e8e8e8 0%, #c4c4c4 52%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #e8e8e8 0%, #c4c4c4 52%); /* IE10+ */
+  background: linear-gradient(to bottom, #e8e8e8 0%, #c4c4c4 52%); /* W3C */
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e8e8e8', endColorstr='#c4c4c4', GradientType=0 ); /* IE6-9 */
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+.dragdealer {
+  position: relative;
+  height: 30px;
+  background: #EEE;
+}
+.dragdealer .handle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+.dragdealer .red-bar {
+  width: 100px;
+  height: 30px;
+  background: #CC0000;
+  color: #FFF;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+}
+.dragdealer .disabled {
+  background: #898989;
+}
+
+.dragdealer {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+
+  height: 40px;
+  width: 740px;
+  background: #e1e1e1;
+  border-radius: 3px;
+}
+
+.dragdealer .red-bar {
+  height: 40px;
+  font-size: 16px;
+  line-height: 40px;
+  border-radius: 3px;
+}

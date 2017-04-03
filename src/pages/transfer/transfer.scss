@@ -1,0 +1,38 @@
+.transfer_sub .button{
+    width: 49.333%; text-transform: capitalize;
+}
+.person_icon{
+    border: 1px solid #ccc;
+}
+.icon_search .searchbar-search-icon{right: 8px;}
+
+.transfersearchdiv{background: $lightblue; width: 100%; overflow: hidden;}
+.searchleft{width: 90%; float: left;}
+.searchright{width: 10%; float: right; text-align: center; font-weight: bold; font-family:'Lato Semibold';}
+
+.custom-search-add{color: $white; font-size: 3rem !important; text-align: center; padding-top:18%;}
+
+.sortrow{
+    border-bottom: 2px solid #d7d7d7;
+    margin: 5px 0;
+    text-align: left;
+    color: #000;
+}
+
+.wrapper-transfercontact{width: 80%; margin: 0 auto;}
+
+.text-left{
+    text-align: left !important;
+}
+.text-right{
+    text-align: right !important;
+}
+
+
+.customicon-self{color: #2196f3;}
+
+@media screen and (orientation:landscape) { 
+
+	.custom-search-add{color: $white; font-size: 3rem; text-align: center; padding-top:10%;}
+
+}

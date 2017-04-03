@@ -1,0 +1,27 @@
+.vidwrapper{width:95% !important; margin: 20px auto; display:block;}
+video {
+  width: 100%    !important;
+  height: auto   !important;
+}
+.tutorial_content .swiper-pagination.hide{
+    display: block !important;
+}
+.tutorial_content ion-slides {
+
+    ion-slide{    
+        img{
+            margin: 25% auto;
+        }
+        p{
+            padding: 0 15px;
+        }
+    }
+    .slide_arrow{
+        /*position: absolute;
+        top: 0px;
+        right: 0px;*/
+        font-weight: bold;
+        font-size: 24px;
+        margin: 2%;
+    }
+}

@@ -1,0 +1,112 @@
+<!--
+  Generated template for the Payments page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+    <ion-navbar topcolor_bg> <!-- If you don't need back here -->
+    <button ion-button menuToggle start>
+      <ion-icon name="menu"></ion-icon>
+      </button>
+        <ion-title>Payments</ion-title>
+        <ion-buttons end>
+            <span class="righttext-white"> > P 2500 </span>
+            <button ion-button (click)="presentPopover($event)">
+                <ion-icon name="md-more"></ion-icon>
+            </button>
+        </ion-buttons>
+    </ion-navbar>
+</ion-header>
+
+
+<ion-content class="payment_content">
+    <ion-row class="sub-row">
+        <a class="button" tab-state (click)="goToPayments()">Bill</a>
+        <a class="button" tab-state (click)="goToMerchants()">Merchants</a>
+        <a class="button" tab-state (click)="goToAirtime()">Airtime</a>
+        <!--<ion-col class="sub-row-text">BILL</ion-col>
+        <ion-col class="sub-row-text" (click)="goToMerchants()">MERCHANTS</ion-col>
+        <ion-col class="sub-row-text">AIRTIME</ion-col>-->
+    </ion-row>
+    
+<ion-searchbar class="search-bar icon_search" placeholder="Bill Code"></ion-searchbar>
+
+  <ion-card class="customcard-background">
+
+    <ion-card-header class="no-padding custom-card-header">
+      <ion-grid>
+        <ion-row>
+          <ion-col class="alignleft">25th June, 2016</ion-col>
+          <ion-col class="alignright">0003457</ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-header>
+
+    <ion-card-content class="no-padding">
+      <ion-grid class=nopaddingbottom>
+        <ion-row>
+          <ion-col width-30>
+            <img class="image" src="assets/images/woman.png" alt="man">
+            <p class="usertext">User</p>
+          </ion-col>
+          <ion-col width-40 class="bluetext"> </ion-col>
+          <ion-col width-40 class="aligner">
+            <span class="aligner-item" text-right>
+              <p class="bannerdiv-text-blue-payments">P 1,500</p>
+              <p class="subtext-payments">before 14 Days</p>
+            </span>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+
+    <ion-grid class="nopaddingbottom nopaddingtop">
+      <ion-row>
+        <ion-col class="nopaddingtop"><button (click)="goToHistoryp()" class="custom-button" ion-button>History</button></ion-col>
+        <ion-col class="nopaddingtop"><button (click)="goToMakaePayment()" class="custom-button" ion-button>Pay Now</button></ion-col>
+      </ion-row>
+    </ion-grid>
+
+  </ion-card>
+
+  <ion-card class="customcard-background">
+
+    <ion-card-header class="no-padding custom-card-header">
+      <ion-grid>
+        <ion-row>
+          <ion-col class="alignleft">25th June, 2016</ion-col>
+          <ion-col class="alignright">0003457</ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-header>
+
+    <ion-card-content class="no-padding">
+      <ion-grid class=nopaddingbottom>
+        <ion-row>
+          <ion-col width-30>
+            <img class="image" src="assets/images/woman.png" alt="man">
+            <p class="usertext">User</p>
+          </ion-col>
+          <ion-col width-40 class="bluetext"> </ion-col>
+          <ion-col width-40 class="aligner">
+            <span class="aligner-item" text-right>
+              <p class="bannerdiv-text-blue-payments">P 2,500</p>
+              <p class="subtext-payments">before 14 Days</p>
+            </span>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+
+    <ion-grid class="nopaddingbottom nopaddingtop">
+      <ion-row>
+        <ion-col class="nopaddingtop"><button (click)="goToHistoryp()" class="custom-button" ion-button>History</button></ion-col>
+        <ion-col class="nopaddingtop"><button (click)="goToMakaePayment()" class="custom-button" ion-button>Pay Now</button></ion-col>
+      </ion-row>
+    </ion-grid>
+
+  </ion-card>
+  
+    <span class="qr_code"><p>QR CODE</p></span>
+</ion-content>

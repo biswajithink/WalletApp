@@ -1,0 +1,28 @@
+.popover-content .popover .item {
+    padding-left: 0px !important;
+    color: $darkgrey;
+}
+.popover-content .popover .item.active, .popover-content .popover .item.activated, .popover-content .popover .item:hover{
+    color: $orange;
+}
+.popover-content .popover .item  .item-inner{
+    background: none;
+    padding-right: 0px;
+    text-align: center;
+    border-bottom: 1px solid $lightergrey;
+}
+.popover-content .popover .item:last-child, .popover-content .popover .item:last-child  .item-inner{
+    border-bottom: none;
+}
+.popover-content{
+    width: 40% ;
+    max-width: 250px ;
+    border-radius: 3px ;
+}
+.popover-arrow::after{
+    left: 2px;
+}
+.popover{
+    border-radius: 0px;
+    margin-bottom: 0px;
+}

@@ -1,0 +1,27 @@
+.middle-text-transferaccepted {
+  text-align: center;
+  color: #2d3d57;
+  font-size: 25px;
+  padding-top: 5px;
+  padding-bottom: 5px; }
+
+  .amounttosend-text-small{color:#2d3d57; font-size:22px; text-align:center; margin:0px;}
+
+  .transferacceptedtext-blue{    font-size: 9vw;
+    color: #2196f3;
+    text-align: center;
+    margin: 0;
+    font-family: 'Lato Semibold';
+    padding-bottom: 20%;
+    padding-top: 12%;}
+
+    .customcard-background-transferaccepted{background: #efefef url('../../assets/images/background-ash.png') repeat-y top;
+    border: 1px solid #e0e0e0;
+    margin-top: 20%;}
+
+    .bluetext-transferaccepted-left {color: $lightblue !important; font-size: 2.5rem; font-family: 'Lato Semibold'; text-transform: uppercase;}
+
+    .bluetext-transferaccepted-right{@extend .bluetext-transferaccepted-left; text-align: right;}
+
+    .no-padding-top{padding-top: 0;}
+    .custom-border-bottom{border-bottom: 2px solid #e0e0e0; width: 95%; margin: 0 auto;}

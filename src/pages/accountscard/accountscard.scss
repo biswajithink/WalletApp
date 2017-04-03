@@ -1,0 +1,70 @@
+.ac-round-image{
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    border: 3px solid #fff;
+    background-color: aqua;
+    display: block; 
+    margin: 0 auto;
+    text-align: center;
+    line-height: 75px;
+    font-size: 16px;
+    color: #fff;
+    
+}
+
+.acc_row1:nth-child(1) .ac-round-image{
+    background: url('../../assets/images/deposit.png') no-repeat center top;
+    background-size:100%; 
+}
+.acc_row1:nth-child(2) .ac-round-image{
+    background: url('../../assets/images/withdraw.png') no-repeat center top;
+    background-size:100%; 
+}
+.acc_row1:nth-child(3) .ac-round-image{
+    background: url('../../assets/images/edit.png') no-repeat center top;
+    background-size:100%; 
+}
+.ac-rec-image{
+    width: 100px;
+    height: 75px;
+    line-height: 75px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000;
+    font-size: 24px;
+    background: url('../../assets/images/acc_visa.png') no-repeat center center;
+    background-size: 100%;
+}
+.text_data1{font-size: 2rem !important; text-transform: uppercase; margin-top:6px !important; font-family:'Lato Semibold'; color: $darkgrey !important;}
+
+.text_data2{margin:0 !important; padding-bottom: 6px; font-family:'Lato Semibold'; color:#365986 !important; font-size:3rem !important;}
+
+.auther_name{
+    font-size: 16px;
+    margin:0;
+}
+.exp_date{
+    font-size: 16px;
+    margin:0;
+    text-align: right;
+}
+
+.custom-h-card-background-dark{border: 2px solid #e0e0e0; margin-top: 15px;}
+.custom-row{background: #365986; width: 100%; padding: 0;}
+.custom-ioncard-p{color: $white !important;}
+.auther_name{padding-left: 5px;}
+.exp_date{padding-right: 5px;}
+.image-width{display: block;}
+.usertext1{font-family:'Lato Semibold'; color: $darkgrey !important; text-align: center; padding: 5px 0; font-size: 1.2rem; margin: 0;}
+.nopadding-top{padding-top: 0px;}
+
+
+
+.account-cardmargin ion-row ion-col img{
+    width: 60%;
+    margin: 0px auto;
+}
+.account-cardmargin ion-row ion-col:last-child img{
+    float: right;
+}

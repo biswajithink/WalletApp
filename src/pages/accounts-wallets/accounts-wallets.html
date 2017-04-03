@@ -1,0 +1,130 @@
+<!--
+  Generated template for the AccountsWallets page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+    <ion-navbar topcolor_bg>
+        <button ion-button menuToggle start>
+            <ion-icon name="menu"></ion-icon></button>
+        <ion-title> Accounts</ion-title>
+        <ion-buttons end>
+            <span class="righttext-white"> > P 2500 </span>
+            <button ion-button (click)="presentPopover($event)">
+                <ion-icon name="md-more"></ion-icon>
+            </button>
+        </ion-buttons>
+    </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+  <ion-row class="sub-row">
+        <ion-col class="sub-row-text" (click)="goToAccountsWallets()" >WALLETS</ion-col>
+        <ion-col class="sub-row-text" (click)="goToAccountscard()">CARDS</ion-col>
+ </ion-row>
+ 
+ <ion-card class="customcard-background">
+  <ion-card-content class="no-padding">
+    
+    <ion-grid class="account-cardmargin">
+     <ion-row>
+        <ion-col>
+          <p class="bannerdiv-text-blue-accounts">P 2,500</p>
+          <p class="subtext-accounts">John T Doe</p>
+        </ion-col>
+        <ion-col></ion-col>
+        <ion-col><img src="assets/images/blueimage.png" alt="#"></ion-col>
+     </ion-row>
+
+     <ion-row class="custom-margintop-accounts">
+       <ion-col width-20>
+         <img src="assets/images/edit1.png" alt="edit">
+         <p class="usertext1">Edit</p>
+       </ion-col>
+       <ion-col width-20>
+         <img src="assets/images/history.png" alt="edit">
+         <p class="usertext1">History</p>
+       </ion-col>
+       <ion-col width-20></ion-col>
+       <ion-col width-40>
+         <p class="bannerdiv-text-blue-accounts-right">P 2,500</p>
+         <p class="subtext-accounts-right">John T Doe</p>
+       </ion-col>
+     </ion-row>     
+    </ion-grid>
+  </ion-card-content>
+</ion-card>
+
+ <ion-card class="customcard-background">
+  <ion-card-content class="no-padding">
+    
+    <ion-grid class="account-cardmargin">
+     <ion-row>
+        <ion-col>
+          <p class="bannerdiv-text-blue-accounts">P 2,500</p>
+          <p class="subtext-accounts">John T Doe</p>
+        </ion-col>
+        <ion-col></ion-col>
+        <ion-col><img src="assets/images/blueimage.png" alt="#"></ion-col>
+     </ion-row>
+
+     <ion-row class="custom-margintop-accounts">
+       <ion-col width-20>
+         <img src="assets/images/edit1.png" alt="edit">
+         <p class="usertext1">Edit</p>
+       </ion-col>
+       <ion-col width-20>
+         <img src="assets/images/history.png" alt="edit">
+         <p class="usertext1">History</p>
+       </ion-col>
+       <ion-col width-20></ion-col>
+       <ion-col width-40>
+         <p class="bannerdiv-text-blue-accounts-right">P 2,500</p>
+         <p class="subtext-accounts-right">John T Doe</p>
+       </ion-col>
+     </ion-row>     
+    </ion-grid>
+  </ion-card-content>
+</ion-card>
+
+ <ion-card class="customcard-background">
+  <ion-card-content class="no-padding">
+    
+    <ion-grid class="account-cardmargin">
+     <ion-row>
+        <ion-col>
+          <p class="bannerdiv-text-blue-accounts">P 2,500</p>
+          <p class="subtext-accounts">John T Doe</p>
+        </ion-col>
+        <ion-col></ion-col>
+        <ion-col><img src="assets/images/blueimage.png" alt="#"></ion-col>
+     </ion-row>
+
+     <ion-row class="custom-margintop-accounts">
+       <ion-col width-20>
+         <img src="assets/images/edit1.png" alt="edit">
+         <p class="usertext1">Edit</p>
+       </ion-col>
+       <ion-col width-20>
+         <img src="assets/images/history.png" alt="edit">
+         <p class="usertext1">History</p>
+       </ion-col>
+       <ion-col width-20></ion-col>
+       <ion-col width-40>
+         <p class="bannerdiv-text-blue-accounts-right">P 2,500</p>
+         <p class="subtext-accounts-right">John T Doe</p>
+       </ion-col>
+     </ion-row>     
+    </ion-grid>
+  </ion-card-content>
+</ion-card>
+    
+<ion-card>
+    <ion-card-content>
+        <button class="add_btn" mini><ion-icon name="add"></ion-icon></button>
+    </ion-card-content>
+</ion-card>
+
+</ion-content>

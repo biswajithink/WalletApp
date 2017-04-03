@@ -1,0 +1,88 @@
+<!--
+  Generated template for the Transfer page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+    <ion-navbar topcolor_bg> <!-- If you don't need back here -->
+    <button ion-button menuToggle start>
+      <ion-icon name="menu"></ion-icon>
+      </button>
+        <ion-title>Transfer</ion-title>
+        <ion-buttons end>
+            <span class="righttext-white"> > P 2500 </span>
+            <button ion-button (click)="presentPopover($event)">
+                <ion-icon name="md-more"></ion-icon>
+            </button>
+        </ion-buttons>
+    </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+  <ion-row class="sub-row transfer_sub">
+        <a class="button" tab-state (click)="goToContact()">To Contact</a>
+        <a class="button" tab-state (click)="goToSelf()"><ion-icon name="md-repeat" class="customicon-self" icon-left></ion-icon>&nbsp;To Self</a>
+    </ion-row>
+
+<div class="transfersearchdiv">
+  <div class="searchleft">
+    <ion-searchbar placeholder="Person Code" class="search-bar icon_search"></ion-searchbar>
+  </div>
+  <div class="searchright"><ion-icon class="custom-search-add" name="md-add"></ion-icon></div>
+</div>
+
+<ion-card class="customcard-background">
+  <ion-card-content class="no-padding">
+  <ion-grid>
+      <ion-row class="sortrow">
+        <ion-col width-100>A</ion-col>
+      </ion-row>
+
+      <ion-row class="wrapper-transfercontact aligner">
+        <ion-col><img class="image" src="assets/images/b4.jpg" alt="person"></ion-col>
+        <ion-col class="bluetext aligner-item no-padding text-left">Person 1</ion-col>
+      </ion-row>
+
+      <ion-row class="wrapper-transfercontact aligner">
+        <ion-col><img class="image" src="assets/images/b3.jpg" alt="person"></ion-col>
+        <ion-col class="bluetext aligner-item no-padding text-left">Person 2</ion-col>
+      </ion-row>
+
+      <ion-row class="wrapper-transfercontact aligner">
+        <ion-col><img class="image" src="assets/images/b2.jpg" alt="person"></ion-col>
+        <ion-col class="bluetext aligner-item no-padding text-left">Person 3</ion-col>
+      </ion-row>
+  </ion-grid>
+</ion-card-content>
+</ion-card>
+
+<ion-card class="customcard-background">
+  <ion-card-content class="no-padding">
+  <ion-grid>
+      <ion-row class="sortrow">
+        <ion-col width-100>B</ion-col>
+      </ion-row>
+
+      <ion-row class="wrapper-transfercontact aligner">
+        <ion-col><img class="image" src="assets/images/b4.jpg" alt="person"></ion-col>
+        <ion-col class="bluetext aligner-item no-padding text-left">Person 1</ion-col>
+      </ion-row>
+
+      <ion-row class="wrapper-transfercontact aligner">
+        <ion-col><img class="image" src="assets/images/b3.jpg" alt="person"></ion-col>
+        <ion-col class="bluetext aligner-item no-padding text-left">Person 2</ion-col>
+      </ion-row>
+
+      <ion-row class="wrapper-transfercontact aligner">
+        <ion-col><img class="image" src="assets/images/b2.jpg" alt="person"></ion-col>
+        <ion-col class="bluetext aligner-item no-padding text-left">Person 3</ion-col>
+      </ion-row>
+  </ion-grid>
+</ion-card-content>
+</ion-card>
+
+<span class="qr_code"><p>QR CODE</p></span>
+
+</ion-content>
