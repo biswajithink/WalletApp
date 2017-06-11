@@ -23,13 +23,13 @@ body{
 
 .toolbar{padding: 0; min-height: 4.6rem;}
 
-.toolbar-background{background: $orange !important; border-bottom: none !important;}
+.toolbar-background{background: #3aa2df !important; border-bottom: none !important;}
 
 .bar-button-default{color: $white;}
 
 .righttext-white{color:#fff; font-size:18px; position:absolute; top:4px; left:-77px;}
 
-.banner{background: $darkblue url("../../assets/images/background-blue.png") repeat-y center; width: 100%; z-index: 99; position: relative;}
+.banner{background: #17698a url("../../assets/images/background-blue.png") no-repeat top center; background-size:  130%; width: 100%; z-index: 99; position: relative;}
 
 .bannerdiv{width: 80%; display: block; overflow: hidden; margin: 0 auto; }
 
@@ -39,13 +39,13 @@ body{
 
 .bannerdiv-text-white{font-size:  5vw; color: $white; text-align: left; margin: 0; font-family:'Lato Semibold'; padding-top: 40%;}
 
-.bannerdiv-text-blue{font-size: 10vw; color: $lightblue; text-align: left; margin: 0; font-family:'Lato Semibold';}
+.bannerdiv-text-blue{font-size: 10vw; color: #1ee69e; text-align: left; margin: 0; font-family:'Lato Semibold';}
 
 .custom-segment-button{
-    background: $lightgrey !important;
+    background: #cffaff !important;
     border: none !important;
     border-radius: 0;
-    color: $darkgrey !important;
+    color: #2f2c2c !important;
     font-family:'Lato Semibold';
     font-size: 15px !important;
     text-align: center;
@@ -54,21 +54,21 @@ body{
     text-transform: capitalize !important;
 }
 
-.segment-button.segment-activated{background: $green !important; border-radius: 0px !important; color: $white !important; border-bottom: 2px solid #387ef5 !important;}
+.segment-button.segment-activated{background: #00c17b !important; border-radius: 0px !important; color: $white !important; border-bottom: 2px solid #127954 !important;}
 
 .customcard-background{background: $lightgrey url("../../assets/images/background-ash.png") repeat-y top; border: 1px solid #e0e0e0; margin-top: 20px; box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.3) !important;}
 
 .custom-card-header{border-bottom: 2px solid #e0e0e0; width : 95%; margin: 0 auto; font-family:'Lato Semibold'; color: $darkgrey;}
 
-.bluetext{text-align: center; color: $lightblue; font-size: 2rem; font-family:'Lato Semibold'; padding-top: 10%;}
-.menubackground-home{background: #ececec !important;}
+.bluetext{text-align: center; color: #078c5c; font-size: 2rem; font-family:'Lato Semibold'; padding-top: 10%;}
+.menubackground-home{background: #aeefff !important;}
 
 
 .image{display: block; width: 50%; margin: 0 auto; border-radius: 50%;}
 
 .usertext{font-family:'Lato Semibold'; color: $darkgrey !important; text-align: center; padding: 5px 0; font-size: 1.6rem; margin: 0;}
 
-.custom-button{width: 100%; background: $lightblue; color: $white;}
+.custom-button{width: 100%; background: #1f78ad; color: $white;}
 .custom-search-add{font-size: 2rem !important;}
 .sub-row .button{font-size: 1.5rem !important; font-family:'Lato Semibold'; text-transform: capitalize;}
 .custom-search-add{padding-top: 4% !important;}
@@ -77,14 +77,15 @@ body{
 
 /*-------------Menu CSS--------------*/
 
-.custom-toolbar-background{background: $orange url("../../assets/images/menuback.png") repeat-y !important;}
-.image-menu{display: block; width: 60%; margin: 0 auto; border-radius: 50%; margin: 30px auto; margin-bottom: 0px;}
+/*.custom-toolbar-background{background: #13a8ff url("../../assets/images/menuback.png") repeat-y !important;}*/
+.custom-toolbar-background{background: #13a8ff !important;}
+.image-menu{display: block; width: 60%; margin: 0 auto; border-radius: 50%; margin: 10px auto;}
 .favtext{font-family:'Lato Semibold'; color: $white; font-size: 2rem; text-align: right; padding-top: 15%;}
-.menubackground{background: $darkblue;}
+.menubackground{background: #003c88;}
 .subtext-menutoolbar{font-family: 'Lato Semibold'; font-size: 1.5rem; color: 
 $white; margin: 0; text-align: left;}
 .bannerdiv-text-white-menutoolbar {color: $white; margin: 0; font-family: 'Lato Semibold'; font-size: 2.8rem;}
-.span-toolbar{padding-top: 14%; padding-left: 5%; display: block; width: auto;}
+.span-toolbar{padding-top: 0%; padding-left: 5%; display: block; width: auto;}
 
 .menubackground-wrapper{width: 100%; overflow: hidden;}
 .menubackground ion-list {margin: 0; padding: 0;}

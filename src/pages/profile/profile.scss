@@ -25,7 +25,7 @@
 .number{font-size: 25px; font-weight: bold; color: #2d3d57;}
 
 .custom-card{margin: 0 0 10px 0; box-shadow: none; width: 100%; border: 1px solid #e3e2e1;}
-.custom-card-back{color: $orange; border-bottom: none !important; background: #efefef;}
+.custom-card-back{color: #1e94fd; border-bottom: none !important; background: #efefef;}
 .custom-card-back span{color: $darkgrey; font-family:'Lato Semibold';}
 
 .toolbar-title{color: $white; font-family:'Lato Semibold'; font-size: 2rem; text-align: left; padding: 0px;}
@@ -36,7 +36,7 @@
 font-family:'Lato Semibold'; padding-top: 8%;}
 .profiletext-blue{font-size: 10vw; color: $lightblue; text-align: center; margin: 0; font-family:'Lato Semibold'; padding-bottom: 20%;}
 
-.profileimage{display: block; margin: 0 auto; width:30%; position: absolute; z-index: 99; position: absolute; top: 65%; left: 35%;}
+.profileimage{display: block; margin: 0 auto; width:30%; position: absolute; z-index: 99; position: absolute; top: 65%; left: 0px; right: 0px; border-radius: 100%;}
 
 .colorcircle{padding-top: 18%; width: 90%; margin: 0 auto; padding-bottom: 15px;}
 

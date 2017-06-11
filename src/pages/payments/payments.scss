@@ -30,7 +30,7 @@
 }
 
 .icon_search{
-    background: none;
+    background: none !important;
 }
 .icon_search .searchbar-search-icon{
     right: 15px;
@@ -51,7 +51,7 @@
     display: none !important;
 }
 .qr_code{
-    background: #08336a;
+    background: #17698a;
     width: 80px;
     height: 80px;
     position: fixed;
@@ -90,11 +90,11 @@
     color: #fff;
 }
 .sub-row .button.active, .sub-row .button.activated, .sub-row .button:hover{
-    background: #1f94f3 !important;
+    background: #17698a !important;
     color: #fff !important;
 }
 
-.bannerdiv-text-blue-payments{color: $lightblue !important; margin: 0 !important; font-family:'Lato Semibold'; font-size: 2.7rem !important;}
+.bannerdiv-text-blue-payments{color: #078c5c !important; margin: 0 !important; font-family:'Lato Semibold'; font-size: 2.7rem !important;}
 
 .subtext-payments{font-family:'Lato Semibold'; font-size: 1.3rem !important; color: $darkgrey !important; margin: 0 !important;}
 
@@ -105,7 +105,7 @@
     border-radius: 2px;
 }
 .sub-row .sub-row-text.active, .sub-row .sub-row-text.activated, .sub-row .sub-row-text:hover{
-    background: #1f94f3 !important;
+    background: #17698a !important;
     color: #fff !important;
 }
 

@@ -48,7 +48,7 @@ export class ReportsPage {
       {
         fill: true,
         backgroundColor: [
-          "#84c433","#ff9541",'#28d7f0','#ff509e'
+          "#018cc3","#ec6755",'#b772ae','#00c17b'
         ]
       }
     ];
